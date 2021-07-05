@@ -1,0 +1,48 @@
+.menusection { }
+
+label{
+    color: ivory;
+}
+
+.main-section{
+    background-color: #21293f;  
+    padding: 0 15px; 
+    height: 100vh;
+    color: ivory;
+    
+
+
+}
+.addnewtaskform.container{
+    max-width: 500px; 
+    margin: 0 auto; 
+    padding: 15px; 
+    border: 1px #000 solid; }
+
+
+
+.status{
+    margin: 10px;
+    border: 1px #AAA dashed;
+    border-radius: 10px; 
+    padding: 10px; 
+    background-color: #FFF;
+    text-align: center;
+    }
+
+.tarefa{
+    margin: 10px; 
+    border: 1px #AAA dashed; 
+    border-radius: 10px; 
+    padding: 10px;
+}
+
+.spacer{ height: 15px;}
+.button.success, .button{color: #FFF;}
+.importante{background-color: #f4a0c4}
+.normal{background-color: #00ff7f}
+.semprazo{background-color: #fee8a3}
+.recorrente{background-color: #FFF}
+.highlight{padding: 2px 5px;}
+.semtarefa.active{text-decoration: line-through;}
+.semtarefa{margin-bottom: 0;}

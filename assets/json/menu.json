@@ -1,0 +1,9 @@
+{
+    "MenuIteams":[
+    {"id": 1, "link": "#!/", "name": "Painel", "perent": 0},
+    {"id": 2, "link": "#!/view", "name": "Ver Tarefas", "perent": 0},
+    {"id": 3, "link": "#!/new", "name": "Nova Tarefa", "perent": 2},
+    {"id": 4, "link": "#!/reports", "name": "Relatorios", "perent": 0}
+    ]
+}
+

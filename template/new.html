@@ -1,0 +1,53 @@
+<div class="spacer"></div>
+<div class="addnewtaskform container">
+    <h1 class="text-center">Nova Tarefa</h1>
+    <div class="status" ng-show="status">{{status}}</div>
+    <div class="tarefa" ng-show="taskName"><span class="highlight {{priority}}">{{priority | uppercase}}</span> {{taskName}}<strong ng-show="selectcategoria">{{' -'+ selectcategoria }}</strong></div>
+    <form>
+        <div class="grid-x grid-margin-x">
+            <div class="medium-12 cell">
+                <label id="corTextonova">Descrição
+                    <input type="text" name="taskName"  placeholder="O que deseja agendar?" ng-model="taskName">
+                </label>
+            </div>
+            <div class="medium-6 cell">
+                <label>Categoria
+                    <select ng-model="selectcategoria">
+                        <option ng-repeat="cat in catgories">{{cat}}</option>
+                    </select>
+                </label>
+            </div>
+            <div class="medium-6 cell">
+                <label >Prioridade
+                    <select ng-model="priority">
+                        <option value="importante" class="importante">Importante</option>
+                        <option value="normal" class="normal">Normal</option>
+                        <option value="sempazo" class="semprazo">Sem prazo</option>
+                        <option value="recorrente" class="recorrente">Recorrente</option>
+                    </select>
+                </label>
+            </div>
+            <div class="medium-12 cell">
+                <button class="success button expanded" ng-click="addTask()">Adicionar tarefa</button>
+            </div>
+        </div>
+    </form>
+</div>
+
+<div class="spacer"></div>
+<div class="addnewtaskform container">
+    <div class="status" ng-show="catStatus">{{catStatus}}</div>
+    <h4 class="text-center">Crie uma Categoria</h4>
+    <form>
+        <div class="grid-x grid-margin-x">
+            <div class="medium-12 cell">
+                <label>Categoria
+                    <input type="text" name="taskName" ng-model="newCategory" placeholder=" Qual nome da catergoria?">
+                </label>
+            </div>
+            <div class="medium-12 cell">
+                <button class="success button expanded" ng-click="addCategory()">Adiacionar Categoria</button>
+            </div>
+        </div>
+    </form>
+</div>
